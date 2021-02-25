@@ -86,10 +86,10 @@ from math import *
 
 #zad9
 
-string = 'tutaj zmienna typu string'
-float = 5.8
-hexadecimal = 18
-print('%s, %f, %s' %(string, float, hex(hexadecimal)))
+# string = 'tutaj zmienna typu string'
+# float = 5.8
+# hexadecimal = 18
+# print('%s, %f, %s' %(string, float, hex(hexadecimal)))
 
 
 
