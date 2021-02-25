@@ -17,3 +17,7 @@ if __name__ == '__main__':
 
 import sys as system
 print(system.version)
+
+
+a=2
+print(a)
