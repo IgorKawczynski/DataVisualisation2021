@@ -69,7 +69,7 @@ napis = 'isi'
 grupa = 2
 print('specjalizacja %s, grupa %d' %(napis,grupa))
 
-a3 = 5
+a3 = 6
 b3 = 3
-c3 = 5 - 3
+c3 = 6 - 3
 print('wynik dzialania %(zmienna1)d-%(zmienna2)d=%(zmienna3)d' % {'zmienna1' : a3, 'zmienna2' : b3, 'zmienna3' : c3})
