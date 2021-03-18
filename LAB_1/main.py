@@ -95,7 +95,3 @@ from math import *
 
 
 
-#zad9
-
-
-
