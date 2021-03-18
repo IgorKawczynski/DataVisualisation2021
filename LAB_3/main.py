@@ -61,30 +61,29 @@
 
 # # ZAD6
 #
-# def ciag(a=1, b=4, ile=10):
-#     i = 0
-#     suma = 1
-#     for i in range(i, ile):
-#         iloczyn = a * b
-#         suma *= iloczyn
-#     return suma
+# def iloczyn_ciagu(a1=1, b=4, ile=10):
+#     iloczyn = a1
+#     for x in range(0, ile):
+#         a2 = a1 * b
+#         iloczyn = iloczyn * a2
+#         a1 = a2
+#     return iloczyn
 #
-# print(ciag())
-# print(ciag(9, 8, 6))
-
-# # ZAD7
 #
-# def ciag2(* liczby):
+# print(iloczyn_ciagu())
+# print(iloczyn_ciagu(4, 4, 6))
+#
+#
+#  # ZAD7
+# #
+# def iloczyn_ciagu2(* a):
 #     iloczynciag = 1
-#
-#     for i in range(0,liczby[2]):
-#         mnozenie = liczby[0]*liczby[1]
-#         iloczyn = mnozenie
-#         iloczynciag *= iloczyn # iloczyn ciagu lacznie
+#     for x in a:
+#         iloczynciag = iloczynciag * x
 #     return iloczynciag
 #
 #
-# print(ciag2(9, 8, 6))
+# print(iloczyn_ciagu2(2, 8, 6))
 
 # # ZAD8
 #
@@ -95,6 +94,19 @@
 #
 #
 # paragon(konina=59, amoniak=34, wafle=25, maslo=54, perfumy=21)
+
+# ZAD 9
+from ciagi import *
+
+print(ciag_arytmetyczny_wzor.arytmetyczny_n(1, 3, 100))
+print(ciag_arytmetyczny_suma.arytmetyczny_suma(1, 3, 100))
+print(ciag_geometryczny_wzor.geometryczny_n(1, 2, 12))
+print(ciag_geometryczny_suma.geometryczny_suma(1, 2, 12))
+
+
+
+
+
 
 # zbior = {'jeden', 'dwa', 'trzy', 'cztery', 'itd'}
 # print(zbior)
