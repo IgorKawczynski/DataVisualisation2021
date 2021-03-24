@@ -93,7 +93,7 @@ import sys
 #         self.liczba_elementow = ((self.an - self.a1) / self.r) + 1
 #         return self.liczba_elementow
 #
-#
+# #
 # ciag1 = CiagArytmetyczny()
 # ciag1.pobierz_parametry()
 # wyraz_n_ciagu = ciag1.n_wyraz()
