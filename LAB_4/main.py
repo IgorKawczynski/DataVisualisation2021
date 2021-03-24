@@ -60,7 +60,50 @@ import sys
 # print(nr2.ile_produktu())
 # print(nr2.ile_kosztuje())
 
-# # ZAD 5
+# ZAD 5
+
+
+# class CiagArytmetyczny:
+#
+#     a1 = 0
+#     n = 0
+#     r = 0
+#     an = 0
+#     liczba_elementow = 0
+#
+#     def wyswietl_dane(self):  # wyswietla dane ciągu
+#         print('Wyraz pierwszy :', self.a1,
+#               'Liczba wyrazów :', self.n,
+#               'Reszta :', self.r)
+#
+#     def n_wyraz(self):  # liczy n-ty wyraz ciągu
+#         self.an = self.a1 + (self.n - 1) * self.r
+#         return self.an
+#
+#     def pobierz_parametry(self): # pobiera parametry ciągu
+#         self.a1 = float(input("Pierwszy element ciągu:"))
+#         self.n = float(input("Liczba elementów ciągu:"))
+#         self.r = float(input("Różnica ciągu:"))
+#
+#     def policz_sume(self):  # liczy sume ciągu
+#         suma = (self.a1 + self.an) / 2 * self.n
+#         return suma
+#
+#     def policz_elementy(self):
+#         self.liczba_elementow = ((self.an - self.a1) / self.r) + 1
+#         return self.liczba_elementow
+#
+#
+# ciag1 = CiagArytmetyczny()
+# ciag1.pobierz_parametry()
+# wyraz_n_ciagu = ciag1.n_wyraz()
+# print('Wyraz n-ty tego ciągu to:',wyraz_n_ciagu)
+# suma_ciagu = ciag1.policz_sume()
+# print('Suma tego ciągu to:', suma_ciagu)
+# liczba_elementow_ciagu = ciag1.policz_elementy()
+# print('Liczba elementów tego ciągu to:', liczba_elementow_ciagu)
+
+# # ZAD 5 II SPOSÓB
 
 # class CiagArytmetyczny:
 #
@@ -88,7 +131,7 @@ import sys
 #     def policz_elementy(self):
 #         self.liczba_elementow = ((self.an - self.a1) / self.r) + 1
 #         return self.liczba_elementow
-#
+
 #
 # ciag1 = CiagArytmetyczny(1, 10, 5)
 # print(ciag1.wyswietl_dane())
@@ -107,6 +150,7 @@ import sys
 # print(suma2)
 # liczba_elementow_ciagu2 = ciag2.policz_elementy()
 # print(liczba_elementow_ciagu2)
+
 
 # # ZAD 6
 
