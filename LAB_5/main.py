@@ -164,13 +164,200 @@
 # print(y2)
 # print(y3)
 
+# # Zad 6
+#
+# class Reverse:
+#
+#     def __init__(self, data):
+#         self.data = data
+#         self.index = len(data)
+#
+#     def __iter__(self):
+#         return self
+#
+#     def __next__(self):
+#         if self.index == 0:
+#             raise StopIteration
+#         self.index = self.index - 1
+#         return self.data[self.index]
+#
+#
+# x = Reverse("Marek Mostowiak Style")
+#
+# print(x)
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+
+# Zad 7
+
+# class Even:
+#
+#     def __init__(self, data):
+#         self.data = data
+#         self.index = 0
+#
+#     def __iter__(self):
+#         return self
+#
+#     def __next__(self):
+#         if self.index == len(self.data)-1:
+#             raise StopIteration
+#         elif self.index % 2 == 0:
+#             self.index = self.index + 1
+#             return self.data[self.index]
+#         else:
+#             self.index = self.index + 1
+#             return "Nieparzysta"
+#
+#
+# x = Even("Marek Mostowiak Style")
+#
+# print(x)
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+
+# # Zad 8
+#
+# class Samogloski:
+#
+#     def __init__(self, data):
+#         self.data = data
+#         self.index = 0
+#
+#     def __iter__(self):
+#         return self
+#
+#     def __next__(self):
+#         if self.index == len(self.data)-1:
+#             raise StopIteration
+#         elif self.data[self.index] == "a":
+#             print(self.data[self.index])
+#             self.index = self.index + 1
+#         elif self.data[self.index] == "ą":
+#             print(self.data[self.index])
+#             self.index = self.index + 1
+#         elif self.data[self.index] == "e":
+#             print(self.data[self.index])
+#             self.index = self.index + 1
+#         elif self.data[self.index] == "ę":
+#             print(self.data[self.index])
+#             self.index = self.index + 1
+#         elif self.data[self.index] == "i":
+#             print(self.data[self.index])
+#             self.index = self.index + 1
+#         elif self.data[self.index] == "o":
+#             print(self.data[self.index])
+#             self.index = self.index + 1
+#         elif self.data[self.index] == "u":
+#             print(self.data[self.index])
+#             self.index = self.index + 1
+#         elif self.data[self.index] == "y":
+#             print(self.data[self.index])
+#             self.index = self.index + 1
+#         else:
+#             self.index = self.index + 1
+#
+#
+# x = Samogloski("Marek Moooooostowiak Style")
+#
+# print(x)
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+# print(x.__next__())
+
+# # Zad 9
+#
+# def reverse(data):
+#     for index in range(len(data)-1, -1, -1):
+#         yield data[index]
+#
+#
+# x = reverse("Marek Mostowiaczek Style")
+#
+# print(x)
+# print("Marek Mostowiak Style")
+# print(next(x))
+# print(next(x))
+# print(next(x))
+# print(next(x))
+# print(next(x))
+
+# ///////////LUB///////////
+
+# def even(data):
+#     for index in range(len(data)):
+#         if index % 2 != 0:
+#             yield data[index]
+#
+#
+# x = even("Marek Mostowiaczek Style")
+#
+# print(x)
+# print("Marek Mostowiak Style")
+# print(next(x))
+# print(next(x))
+# print(next(x))
+# print(next(x))
+# print(next(x))
 
 
+# # Zad 10
+#
+# def ciag(a1, r, n):
+#     for x in range(n):
+#         an = a1 + (x - 1) * r
+#         yield an
+#
+#
+# ciag1 = ciag(1, 2, 20)
+# print(ciag1)
+# print(next(ciag1))
+# print(next(ciag1))
+# print(next(ciag1))
+# print(next(ciag1))
+# print(next(ciag1))
+# print(next(ciag1))
+# print(next(ciag1))
+# print(next(ciag1))
+# print(next(ciag1))
+# print(next(ciag1))
+# print(next(ciag1))
+#
+# ciag2 = ciag(5, 5, 50)
+# print(ciag2)
+# print(next(ciag2))
+# print(next(ciag2))
+# print(next(ciag2))
+# print(next(ciag2))
+# print(next(ciag2))
+# print(next(ciag2))
+# print(next(ciag2))
+# print(next(ciag2))
+# print(next(ciag2))
+# print(next(ciag2))
+# print(next(ciag2))
+# print(next(ciag2))
 
 
-
-
-
+# NOTATKI $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 
 # class Ksztalty:
