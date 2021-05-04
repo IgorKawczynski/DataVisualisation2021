@@ -96,13 +96,6 @@ print(df2005)
 df2005.to_csv('zamowienia_2005.csv', sep=';')
 
 # NOTATKI
-# print(df.groupby(['Kontynent']).agg({'Populacja': ['sum']}))
-#
-#
-# # MAMY TEZ SUMY CZESCIOWE ZNANE Z EXCELA I TABELE PRZESTAWNE
-# print("____sumy częsciowe ____")
-# tabela = pd.pivot_table(df, values=['Populacja'], index=['Kontynent'], columns=['Kraj'], aggfunc=np.sum, margins=True)
-# print(tabela.stack('Kraj'))
 
 # # SERIES (1-dim)
 # seria = pd.Series([1, 3, 5, np.nan, 6, 8])
@@ -265,13 +258,3 @@ df2005.to_csv('zamowienia_2005.csv', sep=';')
 # print("____sumy częsciowe ____")
 # tabela = pd.pivot_table(df, values=['Populacja'], index=['Kontynent'], columns=['Kraj'], aggfunc=np.sum, margins=True)
 # print(tabela.stack('Kraj'))
-
-
-
-
-
-
-
-
-
-
