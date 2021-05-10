@@ -50,42 +50,50 @@ import matplotlib.pyplot as plt
 # plt.ylabel('sepal_width')
 # plt.show()
 
-# # ZAD 6
-# xlsx = pd.ExcelFile('imiona.xlsx')
-# df = pd.read_excel(xlsx, header=0)
-# df['Rok'] = df['Rok'].astype(str)  # konwersja, aby na wykresie data zostala odpowiednio odczytana
-# df_mezczyzni = df[(df['Plec'] == 'M')]
-# df_kobiety = df[(df['Plec'] == 'K')]
-#
-# x1 = df['Plec']
-# x2_kobiety = df_kobiety['Rok']
-# x2_mezczyzni = df_mezczyzni['Rok']
-# x3 = df['Rok']
-#
-# y1 = df['Liczba']
-# y2_kobiety = df_kobiety['Liczba']
-# y2_mezczyzni = df_mezczyzni['Liczba']
-# y3 = df['Liczba']
-#
-# plt.subplot(1, 3, 1)
-# plt.bar(x1, y1)
-# plt.title('wykres 1')
-# plt.ylabel('liczba urodzen')
-# plt.xlabel('plec')
-#
-# plt.subplot(1, 3, 2)
-# plt.plot(x2_kobiety, y2_kobiety, 'r', x2_mezczyzni, y2_mezczyzni, 'b')
-# plt.title('wykres 2')
-# plt.ylabel('liczba urodzen kobiet i mezczyzn na poszczegolny rok')
-# plt.xlabel('rok')
-#
-# plt.subplot(1, 3, 3)
-# plt.plot(x3, y3, 'green')
-# plt.title('wykres 3')
-# plt.ylabel('liczba urodzen na kazdy rok')
-# plt.xlabel('rok')
-#
-# plt.show()
+# ZAD 6
+xlsx = pd.ExcelFile('imiona.xlsx')
+df = pd.read_excel(xlsx, header=0)
+df['Rok'] = df['Rok'].astype(str)  # konwersja, aby na wykresie data zostala odpowiednio odczytana
+df_mezczyzni = df[(df['Plec'] == 'M')]
+df_kobiety = df[(df['Plec'] == 'K')]
+
+x1 = ['Kobiety', 'Mezczyzni']
+x2_kobiety = df_kobiety['Rok']
+x2_mezczyzni = df_mezczyzni['Rok']
+x3 = df['Rok']
+
+
+y1 = [3521321, 3714961]
+y2_kobiety = df_kobiety['Liczba']
+y2_mezczyzni = df_mezczyzni['Liczba']
+y3 = df['Liczba']
+# group_kobiety = df_kobiety.groupby(['Rok']).agg({'Liczba': ['sum']})
+# group_mezczyzni = df_mezczyzni.groupby(['Rok']).agg({'Liczba': ['sum']})
+
+plt.subplot(1, 3, 1)
+plt.bar(x1, y1)
+plt.title('wykres 1')
+plt.ylabel('liczba urodzen')
+plt.xlabel('plec')
+
+# Mam problem z wykresami w formie subplotów :
+# w tej formie nie wiem jak mogę pogrupować dane, a następnie z tych pogrupowanych danych stworzyć wykres,
+# gdzie przy zwykłych wykresach mogę pogrupować dane, a następnie prosto stworzyć wykres,
+# tak tutaj program wymaga ode mnie podania coanjmniej 2 danych w komendzie, chodzi o całe zadanie nr. 6
+
+plt.subplot(1, 3, 2)
+plt.plot(x2_kobiety, y2_kobiety, 'r', x2_mezczyzni, y2_mezczyzni, 'b')
+plt.title('wykres 2')
+plt.ylabel('liczba urodzen kobiet i mezczyzn na poszczegolny rok')
+plt.xlabel('rok')
+
+plt.subplot(1, 3, 3)
+plt.plot(x3, y3, 'green')
+plt.title('wykres 3')
+plt.ylabel('liczba urodzen na kazdy rok')
+plt.xlabel('rok')
+
+plt.show()
 
 # # ZAD 7
 # df = pd.read_csv('zamowienia.csv', header=0, sep=';', decimal=',')
